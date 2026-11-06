@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Menu</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #f4f6f8; }
+    .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 28px;
+      padding: 18px 24px;
+      background: #202938;
+    }
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .menu a:hover { color: #9bd3ff; }
+  </style>
+</head>
+<body>
+  <nav class="menu" aria-label="Main navigation">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+</body>
+</html>
+

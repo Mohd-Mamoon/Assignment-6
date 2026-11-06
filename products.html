@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Product Listing</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 32px;
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+    }
+    h1 { text-align: center; margin: 0 0 28px; }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: stretch;
+      gap: 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .product {
+      flex: 1 1 220px;
+      max-width: 260px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 18px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 3px 14px rgba(0,0,0,.07);
+    }
+    .product .emoji {
+      display: grid;
+      place-items: center;
+      min-height: 110px;
+      border-radius: 9px;
+      background: #e8efff;
+      font-size: 48px;
+    }
+    .product h2 { margin: 4px 0 0; font-size: 18px; }
+    .product p { margin: 0; color: #526071; }
+    .price { margin-top: auto; font-weight: bold; color: #1d4ed8; }
+  </style>
+</head>
+<body>
+  <h1>Featured Products</h1>
+  <main class="products">
+    <article class="product"><div class="emoji"><img src="https://t4.ftcdn.net/jpg/05/81/81/35/360_F_581813566_e4ywdbkTYvxMbcDOL6ejx5WcYdySQeZj.jpg" alt="headphone" height="100px" width="100px"></div><h2>Wireless Headphones</h2><p>Clear sound for everyday listening.</p><div class="price">₹1,999</div></article>
+    <article class="product"><div class="emoji"><img src="https://media.istockphoto.com/id/481616102/photo/apple-watch-sport.jpg?s=612x612&w=0&k=20&c=uJuuSi9jiwjhAm8lehYQTskuPkrQOJSM9rBrbpn-zQw=" alt="smart watch" height="100px" width="100px"></div><h2>Smart Watch</h2><p>Keep track of your daily activity.</p><div class="price">₹2,499</div></article>
+    <article class="product"><div class="emoji"><img src="https://carrypro.in/cdn/shop/files/1_c3f04536-93c6-4280-aace-40a31712615e.jpg?v=1782130141&width=1755"alt="backpack" height="100px" width="100px"></div><h2>Travel Backpack</h2><p>A practical bag for school and trips.</p><div class="price">₹1,299</div></article>
+    <article class="product"><div class="emoji"><img src="https://x.imastudent.com/content/0075095_fujifilm-instax-mini-liplay-hybrid-instant-camera-misty-white_500.png" alt="camera" height="100px" width="100px"></div><h2>Instant Camera</h2><p>Capture and print special moments.</p><div class="price">₹5,499</div></article>
+    <article class="product"><div class="emoji"><img src="https://m.media-amazon.com/images/I/71VIc-MHaNL._AC_UF1000,1000_QL80_.jpg" alt="keyboard" height="100px" width="100px"></div><h2>Mechanical Keyboard</h2><p>Comfortable typing with tactile keys.</p><div class="price">₹3,199</div></article>
+    <article class="product"><div class="emoji"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn7wgnFHi3ugBjIf-9fiT7pC4UKF9A0CQCAs5Uh4CPcsEQdJ1zKtNH66Ci&s=10" alt="mouse" height="100px" width="100px"></div><h2>Wireless Mouse</h2><p>Simple, reliable everyday control.</p><div class="price">₹799</div></article>
+    <article class="product"><div class="emoji"><img src="https://m.media-amazon.com/images/I/7101mxxpNPL.jpg" alt="speaker" height="100px" width="100px"></div><h2>Bluetooth Speaker</h2><p>Portable audio for your room.</p><div class="price">₹1,599</div></article>
+    <article class="product"><div class="emoji"><img src="https://ikiru.in/cdn/shop/products/buy-table-lamp-adjustable-table-lamp-for-study-office-and-bedroom-by-kp-lamps-store-on-ikiru-online-store-1.jpg?v=1772690572encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn7wgnFHi3ugBjIf-9fiT7pC4UKF9A0CQCAs5Uh4CPcsEQdJ1zKtNH66Ci&s=10" alt="lamp" height="100px" width="100px"></div><h2>Desk Lamp</h2><p>Adjustable light for study time.</p><div class="price">₹2,299</div></article>
+  </main>
+</body>
+</html>

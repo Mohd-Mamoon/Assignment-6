@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Login</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background: #edf2f7;
+    }
+    .login-card {
+      width: min(100%, 360px);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 30px;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 8px 28px rgba(0,0,0,.10);
+    }
+    h1 { margin: 0 0 4px; text-align: center; }
+    label { font-size: 14px; font-weight: bold; }
+    input {
+      width: 100%;
+      margin-top: 6px;
+      padding: 11px;
+      border: 1px solid #cbd5e1;
+      border-radius: 7px;
+      font: inherit;
+    }
+    button {
+      padding: 12px;
+      border: 0;
+      border-radius: 7px;
+      color: white;
+      background: #2563eb;
+      font: inherit;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main class="login-card">
+    <h1>Welcome Back</h1>
+    <label>Email
+      <input type="email" placeholder="you@example.com">
+    </label>
+    <label>Password
+      <input type="password" placeholder="Enter your password">
+    </label>
+    <button type="button">Log In</button>
+  </main>
+</body>
+</html>
